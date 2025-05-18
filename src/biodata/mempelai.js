@@ -1,7 +1,16 @@
 const data = {
   musik: "musik/nikah.mp3",
-  foto_cover: ["img/galeri/6.webp", "img/galeri/1.jpeg", "img/galeri/7.jpg"],
-  foto_opening: "img/galeri/6.webp",
+  foto_cover: ["img/galeri/1.jpeg"],
+  foto_opening: [
+    "img/galeri/1.jpeg",
+    "img/galeri/2.jpeg",
+    "img/galeri/3.jpg",
+    "img/galeri/4.png",
+    "img/galeri/5.webp",
+    "img/galeri/6.webp",
+    "img/galeri/7.jpg",
+    "img/galeri/8.jpg",
+  ],
   mempelai: {
     pria: {
       nama_panggilan: "Vidi",

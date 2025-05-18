@@ -88,7 +88,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <v-app class="bg-gradient-to-r from-[#274472] to-[#172f57]">
+  <v-app class="bg-gradient-to-r from-[#7d606c] to-[#7a5061]">
     <div
       class="flex flex-col justify-center items-center w-full h-[100dvh]"
       v-if="loading"
@@ -136,7 +136,7 @@ onMounted(() => {
               <RSVP id="RSVP" />
               <Closing :data="data" :caption="captions" id="Penutupan" />
 
-              <Menus :data="data" :active="menu" @selected="checkMenu" />
+              <!-- <Menus :data="data" :active="menu" @selected="checkMenu" /> -->
             </div>
           </div>
         </v-col>

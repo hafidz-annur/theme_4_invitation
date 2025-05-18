@@ -25,35 +25,35 @@ const openInvitation = () => {
     </v-carousel>
 
     <div
-      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#6587bd]/20 to-[#6786b8]"
+      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#492f3a]/30 to-[#BE97A8]"
     >
+      <div class="text-center pt-10">
+        <p
+          class="font-bold text-[14px] uppercase text-dark animate__animated animate__zoomIn"
+        >
+          The Wedding of
+        </p>
+        <div class="flex items-center justify-center gap-2">
+          <h1
+            class="text-5xl font-bold animate__animated animate__zoomIn animate__delay-1s"
+          >
+            {{ props.data?.mempelai.pria.nama_panggilan }}
+          </h1>
+
+          <h2
+            class="text-7xl mt-2 animate__animated animate__zoomIn animate__delay-1s"
+          >
+            &
+          </h2>
+          <h1
+            class="text-5xl font-bold animate__animated animate__zoomIn animate__delay-1s"
+          >
+            {{ props.data?.mempelai.wanita.nama_panggilan }}
+          </h1>
+        </div>
+      </div>
       <div class="absolute bottom-10 left-0 w-full flex justify-center">
         <div class="md:w-[60%] w-[80%]">
-          <div class="text-center mb-5">
-            <p
-              class="font-bold uppercase mb-3 text-dark animate__animated animate__zoomIn"
-            >
-              The Wedding of
-            </p>
-            <div class="flex items-center justify-center gap-2">
-              <h1
-                class="text-5xl animate__animated animate__zoomIn animate__delay-1s"
-              >
-                {{ props.data?.mempelai.pria.nama_panggilan }}
-              </h1>
-
-              <h2
-                class="text-7xl mt-2 animate__animated animate__zoomIn animate__delay-1s"
-              >
-                &
-              </h2>
-              <h1
-                class="text-5xl animate__animated animate__zoomIn animate__delay-1s"
-              >
-                {{ props.data?.mempelai.wanita.nama_panggilan }}
-              </h1>
-            </div>
-          </div>
           <p
             class="text-center mb-3 animate__animated animate__zoomIn animate__delay-2s"
           >
@@ -84,7 +84,7 @@ const openInvitation = () => {
             class="flex justify-center mt-3 animate__animated animate__zoomIn animate__delay-2s"
           >
             <v-btn
-              rounded="0"
+              rounded="xl"
               @click="openInvitation"
               color="primary"
               size="small"

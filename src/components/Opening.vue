@@ -32,29 +32,39 @@ const saveCalendar = () => {
 </script>
 <template>
   <v-container height="100dvh" class="relative overflow-hidden p-0">
-    <img
-      :src="props.data?.foto_opening"
-      alt="Amantrana"
-      class="h-full object-cover"
-    />
+    <v-carousel
+      height="89dvh"
+      :show-arrows="false"
+      :cycle="true"
+      :interval="6000"
+      hide-delimiters
+    >
+      <v-carousel-item
+        v-for="(item, i) in props.data?.foto_opening"
+        :key="i"
+        :src="item"
+        height="89dvh"
+        cover
+      ></v-carousel-item>
+    </v-carousel>
     <div
-      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#41729F]/40 to-[#6786b8] "
+      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#BE97A8] to-[#e4cdd7]/10"
     >
       <div class="p-5">
         <div
           class="text-center pt-5 animate__animated animate__zoomIn animate__delay-1s"
         >
           <p
-            v-html="props.caption?.islam?.pembuka[2]"
+            v-html="props.caption?.islam?.pembuka[0]"
             class="text-[12px] mt-3"
           ></p>
         </div>
 
         <div
-          class="absolute bottom-[7rem] left-0 w-full flex justify-center animate__animated animate__zoomIn animate__delay-2s"
+          class="absolute bottom-[12rem] left-0 w-full flex justify-center animate__animated animate__zoomIn animate__delay-2s"
         >
           <div class="w-full text-center">
-            <h1 class="text-4xl">
+            <h1 class="text-4xl text-white">
               {{ props.data?.mempelai.pria.nama_panggilan }} &
               {{ props.data?.mempelai.wanita.nama_panggilan }}
             </h1>
@@ -87,10 +97,34 @@ const saveCalendar = () => {
               class="mt-3"
               rounded="0"
             >
-              Save Calendar
+              Simpan Tanggal
             </v-btn>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="absolute bottom-5 left-0">
+      <div class="px-3">
+        <Splide
+          :options="{
+            type: 'loop',
+            perPage: 3,
+            autoplay: true,
+            interval: 1000,
+            pagination: false,
+            arrows: false,
+            gap: 10,
+          }"
+          aria-label="Vue Splide Example"
+        >
+          <SplideSlide v-for="item in props.data?.foto_opening" :key="item">
+            <img
+              :src="item"
+              alt="Amantrana"
+              class="w-full h-[150px] object-cover rounded-lg"
+            />
+          </SplideSlide>
+        </Splide>
       </div>
     </div>
   </v-container>

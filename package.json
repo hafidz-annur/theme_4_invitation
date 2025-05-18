@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "firebase": "^11.7.1",
