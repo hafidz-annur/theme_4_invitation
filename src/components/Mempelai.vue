@@ -35,7 +35,7 @@ const props = defineProps({ data: Object });
           </div>
         </div>
         <h2
-          class="text-2xl mt-2 mb-3 flex justify-center items-center gap-5"
+          class="text-2xl mt-2 mb-3 flex justify-center items-center text-white gap-5"
           data-aos="zoom-in"
           data-aos-delay="1000"
         >
