@@ -6,11 +6,11 @@ const props = defineProps({ data: Object });
 <template>
   <v-container height="90dvh" class="relative p-0 overflow-hidden">
     <img
-      :src="props.data?.foto_opening"
+      :src="props.data?.foto_opening[0]"
       alt="Amantrana"
       class="w-full h-full object-cover"
     />
-    <div class="absolute top-0 left-0 w-full h-full bg-black/70 py-10">
+    <div class="absolute top-0 left-0 w-full h-full bg-[#6f505e]/60 py-10">
       <div class="flex justify-center items-center px-5">
         <div class="text-center w-full">
           <p class="mb-10" data-aos="zoom-in" data-aos-delay="500">

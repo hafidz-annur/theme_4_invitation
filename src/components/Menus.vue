@@ -14,12 +14,12 @@ const menus = ref([
     title: "Pembukaan",
   },
   {
-    icon: "mdi-account-heart-outline",
-    title: "Mempelai",
-  },
-  {
     icon: "mdi-comment-quote-outline",
     title: "Quotes",
+  },
+  {
+    icon: "mdi-account-heart-outline",
+    title: "Mempelai",
   },
   {
     icon: "mdi-calendar-star",
@@ -113,25 +113,27 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="fixed bottom-[60px] right-7 z-[9999] flex flex-col">
-    <v-btn
-      size="x-small"
-      color="primary"
-      :icon="!autoplay_menu ? 'mdi-play-outline' : 'mdi-pause'"
-      @click="
-        autoplay_menu = !autoplay_menu;
-        autoplayMenu();
-      "
-      class="mb-2"
-    />
-    <v-btn
-      size="x-small"
-      color="primary"
-      :icon="!autoplay_music ? 'mdi-volume-off' : 'mdi-volume-high'"
-      @click="playMusic()"
-    />
+  <div class="fixed top-[10px] left-0 w-full z-[9999] flex flex-col">
+    <div class="flex justify-between px-5">
+      <v-btn
+        size="x-small"
+        color="primary"
+        :icon="!autoplay_menu ? 'mdi-play-outline' : 'mdi-pause'"
+        @click="
+          autoplay_menu = !autoplay_menu;
+          autoplayMenu();
+        "
+        class="mb-2"
+      />
+      <v-btn
+        size="x-small"
+        color="primary"
+        :icon="!autoplay_music ? 'mdi-volume-off' : 'mdi-volume-high'"
+        @click="playMusic()"
+      />
+    </div>
   </div>
-  <div class="fixed bottom-0 left-0 z-[9999] w-full">
+  <!-- <div class="fixed bottom-0 left-0 z-[9999] w-full">
     <v-tabs
       v-model="selected"
       align-tabs="center"
@@ -154,5 +156,5 @@ onMounted(() => {
         </p>
       </v-tab>
     </v-tabs>
-  </div>
+  </div> -->
 </template>

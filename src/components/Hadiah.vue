@@ -18,7 +18,7 @@ const copyText = (text) => {
 <template>
   <v-container class="relative p-0">
     <img
-      :src="props.data?.foto_opening"
+      :src="props.data?.foto_opening[1]"
       alt="Amantrana"
       class="w-full md:h-[85dvh] h-[80dvh] object-cover"
     />

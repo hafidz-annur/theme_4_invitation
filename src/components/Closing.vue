@@ -3,7 +3,7 @@ const props = defineProps({ data:Object, caption: Object });
 </script>
 <template>
   <v-container height="100dvh" class="relative p-0">
-    <v-img :src="props.data?.foto_opening" height="100dvh" cover></v-img>
+    <v-img :src="props.data?.foto_opening[2]" height="100dvh" cover></v-img>
     <div
       class="absolute top-0 left-0 w-full h-full flex items-center bg-gradient-to-t from-orange-100/40 to-gray-800"
     >

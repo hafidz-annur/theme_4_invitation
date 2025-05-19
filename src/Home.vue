@@ -127,8 +127,8 @@ onMounted(() => {
             />
             <div v-else>
               <Opening :data="data" :caption="captions" id="Pembukaan" />
-              <Mempelai :data="data" id="Mempelai" />
               <Quotes :quote="quotes" id="Quotes" />
+              <Mempelai :data="data" id="Mempelai" />
               <Acara :data="data" id="Acara" />
               <Lokasi :data="data" id="Lokasi" />
               <Galeri :data="data" id="Galeri" />
@@ -136,7 +136,7 @@ onMounted(() => {
               <RSVP id="RSVP" />
               <Closing :data="data" :caption="captions" id="Penutupan" />
 
-              <!-- <Menus :data="data" :active="menu" @selected="checkMenu" /> -->
+              <Menus :data="data" :active="menu" @selected="checkMenu" />
             </div>
           </div>
         </v-col>
