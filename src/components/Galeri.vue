@@ -4,7 +4,7 @@ const props = defineProps({ data: Object });
 </script>
 <template>
   <v-container class="p-0">
-    <div class="relative bg-white overflow-auto p-5">
+    <div class="relative bg-primary overflow-auto p-5">
       <h2 class="text-center text-2xl mb-3">Moment Kami</h2>
       <v-row no-gutters>
         <template v-for="(image, imgIdx) in props.data?.galeri" :key="imgIdx">

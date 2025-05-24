@@ -48,7 +48,7 @@ const saveCalendar = () => {
       ></v-carousel-item>
     </v-carousel>
     <div
-      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#BE97A8] to-[#e4cdd7]/10"
+      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#A3B18A]/10 to-[#3c442d]"
     >
       <div class="p-5">
         <div

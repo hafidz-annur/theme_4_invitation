@@ -4,7 +4,7 @@ const props = defineProps({ data: Object });
 <template>
   <v-container class="relative p-0 overflow-hidden">
     <div
-      class="flex items-center justify-center bg-gradient-to-b from-gray-300 to-gray-500"
+      class="flex items-center justify-center bg-primary"
     >
       <div class="text-center">
         <div class="relative overflow-hidden">
@@ -17,7 +17,7 @@ const props = defineProps({ data: Object });
           </div>
           <div class="absolute left-0 bottom-0 w-full h-full bg-black/50"></div>
           <div class="absolute left-0 bottom-10 w-full">
-            <h3 class="text-3xl">
+            <h3 class="text-3xl text-white">
               {{ props.data?.mempelai.pria.nama_lengkap }}
             </h3>
             <p class="mb-0 text-[12px]">
@@ -54,7 +54,7 @@ const props = defineProps({ data: Object });
           </div>
           <div class="absolute left-0 bottom-0 w-full h-full bg-black/50"></div>
           <div class="absolute left-0 bottom-10 w-full">
-            <h3 class="text-3xl">
+            <h3 class="text-3xl text-white">
               {{ props.data?.mempelai.wanita.nama_lengkap }}
             </h3>
             <p class="mb-0 text-[12px]">

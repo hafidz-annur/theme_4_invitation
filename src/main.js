@@ -5,8 +5,8 @@ import Countdown from "vue3-flip-countdown";
 import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import '@splidejs/vue-splide/css'
-import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import "@splidejs/vue-splide/css";
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
 
 // Vuetify imports
 import "vuetify/styles";
@@ -25,15 +25,11 @@ export default createVuetify({
 const myCustomLightTheme = {
   dark: false,
   colors: {
-    primary: "#BE97A8", // Elegant dusty rose pink
-    secondary: "#41729F", // Bisa tetap atau disesuaikan agar cocok
-    background: "#F4F6FA",
-    surface: "#FFFFFF",
-    text: "#1C1C1C",
-    success: "#3CB371",
-    warning: "#FFC107",
-    error: "#C0392B",
-    info: "#2980B9",
+    primary: "#A3B18A", // Soft sage green
+    secondary: "#DDBEA9", // Warm sandy beige
+    background: "#FAF9F6", // Off-white natural tone
+    surface: "#FFFFFF", // Clean white
+    text: "#2F2F2F",
   },
 };
 
@@ -57,8 +53,8 @@ AOS.init({
 });
 
 const app = createApp(App);
-app.component('Splide', Splide)
-app.component('SplideSlide', SplideSlide)
+app.component("Splide", Splide);
+app.component("SplideSlide", SplideSlide);
 app.use(vuetify);
 app.use(router);
 app.use(Countdown);

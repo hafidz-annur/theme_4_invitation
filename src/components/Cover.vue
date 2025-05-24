@@ -25,7 +25,7 @@ const openInvitation = () => {
     </v-carousel>
 
     <div
-      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#492f3a]/30 to-[#BE97A8]"
+      class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#A3B18A]/10 to-[#3c442d]"
     >
       <div class="text-center pt-10">
         <p
@@ -84,7 +84,6 @@ const openInvitation = () => {
             class="flex justify-center mt-3 animate__animated animate__zoomIn animate__delay-2s"
           >
             <v-btn
-              rounded="xl"
               @click="openInvitation"
               color="primary"
               size="small"
