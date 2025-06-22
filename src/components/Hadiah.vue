@@ -22,7 +22,7 @@ const copyText = (text) => {
       alt="Amantrana"
       class="w-full md:h-[85dvh] h-[80dvh] object-cover"
     />
-    <div class="absolute top-0 left-0 bg-[#3c442d]/70 h-full py-10 px-10">
+    <div class="absolute top-0 left-0 bg-[#292929]/70 h-full py-10 px-10">
       <div class="text-center mb-3" data-aos="zoom-in" data-aos-delay="500">
         <h4 class="mb-1 text-2xl text-white">Terima Kasih</h4>
         <p class="">

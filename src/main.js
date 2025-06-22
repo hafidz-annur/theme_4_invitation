@@ -25,11 +25,11 @@ export default createVuetify({
 const myCustomLightTheme = {
   dark: false,
   colors: {
-    primary: "#A3B18A", // Soft sage green
-    secondary: "#DDBEA9", // Warm sandy beige
-    background: "#FAF9F6", // Off-white natural tone
-    surface: "#FFFFFF", // Clean white
-    text: "#2F2F2F",
+    primary: "#1E1E1E", // Dominan hitam keabu-abuan
+    secondary: "#444444", // Abu gelap untuk aksen atau elemen kedua
+    background: "#121212", // Latar belakang utama, sangat gelap
+    surface: "#1F1F1F", // Area konten atau kartu, sedikit lebih terang
+    text: "#F5F5F5", // Teks terang untuk kontras
   },
 };
 

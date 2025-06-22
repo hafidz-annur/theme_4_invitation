@@ -88,7 +88,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <v-app class="bg-gradient-to-r from-[#DDBEA9] to-[#60713f]">
+  <v-app class="bg-gradient-to-r from-[#d3d3d3] to-[#202120]">
     <div
       class="flex flex-col justify-center items-center w-full h-[100dvh]"
       v-if="loading"
